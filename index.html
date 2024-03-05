@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: azure;">
+    <h1 style="text-align: center;">โปรแกรมคำนวณดัชนีมวลกาย BMI</h1>
+    <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div style="background-color: rgb(103, 175, 230); padding: 30px; padding: 40px;">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h4>น้ำหนัก :</h4>
+            <input id="input-wight" type="text" style="height: 30px;">
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h4>ส่วนสูง :</h4>
+            <input id="input-hight" type="text" style="height: 30px;">
+        </div>
+        <div style="display: flex; justify-content: center; margin: 10px;">
+            <button onclick="display_showBMI(calculator(document.getElementById('input-wight').value , document.getElementById('input-hight').value))" style="padding: 10px;">คำนวณ</button>
+        </div>
+        <div style="display: grid; justify-content: center;">
+            <h4>ค่าที่ได้</h4>
+            <p id="result-bmi"></p>
+            <h4>คุณอยู่ในเกณฑ์</h4>
+            <p id="status-bmi"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
